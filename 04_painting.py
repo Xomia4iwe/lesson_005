@@ -21,6 +21,7 @@ import simple_draw as sd
 import Drawing_tools.rainbow as rainbow
 import Drawing_tools.sun as sun
 import Drawing_tools.house as house
+import Drawing_tools.smile as smile
 
 sd.resolution = (1200, 600)
 sun_point = sd.get_point(150, 450)
@@ -37,6 +38,12 @@ house_height = 25
 house_row = 0
 house.house(point_x=house_point_x, point_y=house_point_y, color=house_color, length=house_length,
             height=house_height, row=house_row)
+
+point1 = sd.get_point(700, 100)
+smile.smile(point1=point1)
+
+
+
 
 sd.pause()
 
