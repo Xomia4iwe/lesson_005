@@ -23,6 +23,7 @@ import Drawing_tools.sun as sun
 import Drawing_tools.house as house
 import Drawing_tools.smile as smile
 import Drawing_tools.Tree as tree
+import Drawing_tools.snowdrift as snowdrift
 
 sd.resolution = (1200, 600)
 sun_point = sd.get_point(150, 450)
@@ -48,6 +49,9 @@ tree_angle = 90
 tree_lenght = 100
 
 tree.tree(start_point_brench=tree_point, angle_brench=tree_angle, lenght_brench=tree_lenght)
+
+
+snowdrift.snowdrift(x=200, y=10, lenght=20, n=30)
 
 
 sd.pause()
